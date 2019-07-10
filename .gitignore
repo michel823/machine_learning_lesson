@@ -2,9 +2,9 @@
 /.pytest_cache
 /liu_ml_pkg.egg-info
 /test_env
+/dist
 *.py[cod]
 *.so
 *.egg
 *.egg-info
-dist
-build
+/build
