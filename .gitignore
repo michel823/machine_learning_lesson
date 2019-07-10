@@ -1,8 +1,7 @@
-./.ipynb_checkpoints/*
-./.pytest_cache/*
-./liu_ml_pkg.egg-info/*
-./test_env/*
-
+/.ipynb_checkpoints
+/.pytest_cache
+/liu_ml_pkg.egg-info
+/test_env
 *.py[cod]
 *.so
 *.egg
