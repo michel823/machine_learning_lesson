@@ -9,5 +9,7 @@ setup(
     author = 'liu_sulan',
     packages = find_packages(),
     include_package_data=True,
+    install_requires=['pandas'],
+    tests_require=['pandas','liu_ml_pkg'],
     
 )
