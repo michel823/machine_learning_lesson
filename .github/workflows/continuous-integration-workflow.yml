@@ -1,4 +1,4 @@
-name: Greet Everyone
+name: Unit Test and PEP 8 style
 # This workflow is triggered on pushes to the repository.
 on:
   push:
@@ -24,4 +24,6 @@ jobs:
       - name: Wemake python stylguide
         uses: wemake-services/wemake-python-styleguide@0.13.4
         continue-on-error: true
+        with:
+            reporter: github-pr-review
      
