@@ -18,6 +18,7 @@ jobs:
       - name: Run unit test
         run: |
             pip install pytest
+            python setup.py install
             pytest
             
       - name: Wemake python stylguide
