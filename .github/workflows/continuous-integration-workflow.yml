@@ -14,16 +14,15 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set up python
         uses: actions/setup-python@master
-      
+
       - name: Run unit test
         run: |
             pip install pytest
             python setup.py install
             pytest
-            
+
       - name: Wemake python stylguide
         uses: wemake-services/wemake-python-styleguide@0.13.4
         continue-on-error: true
         with:
             reporter: github-pr-review
-     
