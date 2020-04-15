@@ -18,8 +18,10 @@ jobs:
       - name: Run unit test
         run: |
             pip install pytest
+            pip install pytest-cov
             python setup.py install
             pytest
+            pytest --cov=./
 
       - name: Wemake python stylguide
         uses: wemake-services/wemake-python-styleguide@0.13.4
